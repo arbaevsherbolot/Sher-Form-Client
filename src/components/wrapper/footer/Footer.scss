@@ -1,0 +1,17 @@
+footer {
+  width: 100vw;
+  padding: 1rem 0;
+
+  background-color: #fff;
+
+  .footer_content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .footer_title {
+      font-size: 1rem;
+      color: rgb(19, 45, 76);
+    }
+  }
+}

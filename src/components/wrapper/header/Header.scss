@@ -1,0 +1,46 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #006aff;
+  border-radius: 2rem;
+
+  padding: 0.3rem;
+  margin: 2rem;
+
+  .links {
+    display: flex;
+    text-align: center;
+    gap: 0.8rem;
+
+    .link {
+      padding: 0.6rem 2rem;
+      border-radius: 2rem;
+
+      background-color: #ffffff44;
+
+      font-size: 1rem;
+      color: #fff;
+
+      transition: 0.4s;
+
+      &:hover {
+        background-color: #ffffffe7;
+        color: #0a1e2c;
+      }
+    }
+
+    .active-link {
+      padding: 0.6rem 2rem;
+      border-radius: 2rem;
+
+      background-color: #102732;
+
+      font-size: 1rem;
+      color: #fff;
+
+      transition: 0.4s;
+    }
+  }
+}
