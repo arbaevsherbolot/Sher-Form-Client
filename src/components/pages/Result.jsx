@@ -5,7 +5,7 @@ export const Result = () => {
   const [data, setData] = useState(null);
 
   useEffect(() => {
-    fetch(`http://localhost:2006/replay`)
+    fetch(`https://light-bat-hose.cyclic.app/replay`)
       .then((response) => response.json())
       .then((data) => setData(data));
   }, []);

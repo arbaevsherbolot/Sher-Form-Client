@@ -55,7 +55,7 @@ export const Home = () => {
     alert("DATA SENT!");
 
     try {
-      await axios.post("http://localhost:2006/sendData", {
+      await axios.post("https://light-bat-hose.cyclic.app/sendData", {
         name,
         email,
         phone: phone ? phone : defaultPhone,
