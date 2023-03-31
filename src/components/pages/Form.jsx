@@ -30,9 +30,7 @@ export const Form = () => {
     if (!name || !email || (!phone && !defaultPhone)) {
       alert("Please fill in all the fields!");
       return;
-    }
-
-    if (!validateName(name)) {
+    } else if (!validateName(name)) {
       errName.innerText =
         "Name must contain at least 2 and no more than 15 words!";
     } else {
@@ -76,7 +74,7 @@ export const Form = () => {
   }
 
   const validateName = (name) => {
-    const regex = /^[\w\s]{2,15}$/;
+    const regex = /^[\w\s]{2,30}$/;
     return regex.test(name);
   };
 
