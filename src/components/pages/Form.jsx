@@ -53,7 +53,7 @@ export const Form = () => {
     alert("DATA SENT!");
 
     try {
-      await axios.post("http://localhost:2007/sendData", {
+      await axios.post("https://light-bat-hose.cyclic.app/sendData", {
         name,
         email,
         phone: phone ? phone : defaultPhone,
