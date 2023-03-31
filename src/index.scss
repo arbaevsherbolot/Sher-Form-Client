@@ -14,7 +14,14 @@
 }
 
 body {
-  background-color: #b3d9ff;
+  background-image: linear-gradient(
+      rgba(15, 20, 36, 0.673),
+      rgba(16, 29, 50, 0.798)
+    ),
+    url("./assets/meta-logo-gif.gif");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   color: white;
 
   min-height: 100vh;

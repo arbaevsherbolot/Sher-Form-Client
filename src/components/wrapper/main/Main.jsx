@@ -1,15 +1,17 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 import { Home } from "../../pages/Home";
-import { Result } from "../../pages/Result";
+import { Form } from "../../pages/Form";
+import { News } from "../../pages/News";
 
 export const Main = () => {
   return (
-    <div>
+    <>
       <Routes>
         <Route element={<Home />} path="/" />
-        <Route element={<Result />} path="/result" />
+        <Route element={<Form />} path="/registration" />
+        <Route element={<News />} path="/news" />
       </Routes>
-    </div>
+    </>
   );
 };

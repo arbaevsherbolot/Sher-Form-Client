@@ -4,7 +4,7 @@ form {
 
   position: absolute;
   left: 50%;
-  top: 40%;
+  top: 45%;
   transform: translate(-50%, -50%);
 
   gap: 0.5rem;
@@ -14,20 +14,20 @@ form {
   .form_title {
     text-align: center;
     padding-bottom: 0.8rem;
-    color: rgba(22, 78, 76, 0.382);
-    font-size: 1.6rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
     font-weight: 800;
     letter-spacing: 0.1rem;
 
     span {
-      color: #0167ff48;
+      color: #ffffffa0;
     }
   }
 
   input {
     width: 300px;
 
-    padding: 0.8rem 1.5rem;
+    padding: 1rem 1.5rem;
     background-color: white;
 
     border: none;
@@ -80,12 +80,12 @@ form {
     transition: 0.4s;
 
     &:hover {
-      background-color: #006aff;
+      background-color: #006eff;
     }
   }
 }
 
-.result_page {
+.news_page {
   min-height: 50vh;
   display: flex;
   justify-content: center;
@@ -93,25 +93,41 @@ form {
   flex-direction: column;
   text-align: center;
 
-  img {
-    width: 50%;
+  .meta_gif {
+    width: 500px;
+    border-radius: 1rem;
+    transition: 0.4s;
+  }
+
+  @media (max-width: 657px) {
+    .meta_gif {
+      width: 370px;
+    }
+  }
+
+  @media (max-width: 380px) {
+    .meta_gif {
+      width: 300px;
+    }
   }
 
   .title {
     text-transform: uppercase;
+    padding: 1.4rem;
     font-size: 1rem;
     border-radius: 3rem;
-    color: #0a1c28;
+    color: #ffffff;
   }
 
   .replay {
     padding-top: 1rem;
     font-size: 2rem;
     font-weight: 600;
-    color: #0a1c28;
+    color: #eff6ff;
+    text-shadow: 0 0 30px #99c5ff;
 
     span {
-      color: #616262;
+      color: #ffffff66;
       text-transform: lowercase;
       font-size: 1.1rem;
       font-weight: 600;

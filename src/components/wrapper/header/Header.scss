@@ -3,22 +3,22 @@
   align-items: center;
   justify-content: center;
 
-  background-color: #006aff;
+  background-color: #0f26473a;
   border-radius: 2rem;
 
   padding: 0.3rem;
-  margin: 2rem;
+  margin: 2rem auto;
 
   .links {
     display: flex;
-    text-align: center;
     gap: 0.8rem;
 
     .link {
-      padding: 0.6rem 2rem;
+      text-align: center;
+      padding: 0.5rem 2rem;
       border-radius: 2rem;
 
-      background-color: #ffffff44;
+      background-color: #ffffff39;
 
       font-size: 1rem;
       color: #fff;
@@ -26,19 +26,16 @@
       transition: 0.4s;
 
       &:hover {
-        background-color: #ffffffe7;
-        color: #0a1e2c;
+        background-color: #2235553b;
       }
     }
 
     .active-link {
-      padding: 0.6rem 2rem;
+      text-align: center;
+      padding: 0.5rem 2rem;
       border-radius: 2rem;
 
-      background-color: #102732;
-
-      font-size: 1rem;
-      color: #fff;
+      background-color: #0059ff;
 
       transition: 0.4s;
     }
