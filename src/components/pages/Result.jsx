@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./Style.scss";
+import gif from "../../assets/giphy-zoom.gif";
 
 export const Result = () => {
   const [data, setData] = useState(null);
@@ -11,6 +12,7 @@ export const Result = () => {
   }, []);
   return (
     <div className="result_page">
+      <img src={gif} alt="gif" />
       <h3 className="title">Reply from the admin:</h3>
 
       <div className="replay">
