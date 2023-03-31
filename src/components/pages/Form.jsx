@@ -30,7 +30,9 @@ export const Form = () => {
     if (!name || !email || (!phone && !defaultPhone)) {
       alert("Please fill in all the fields!");
       return;
-    } else if (!validateName(name)) {
+    }
+    
+    if (!validateName(name)) {
       errName.innerText =
         "Name must contain at least 2 and no more than 15 words!";
     } else {
