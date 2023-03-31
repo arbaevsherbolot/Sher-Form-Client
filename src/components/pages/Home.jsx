@@ -35,21 +35,31 @@ export const Home = () => {
     if (!validateName(name)) {
       errName.innerText = "Please enter a valid name!";
       return;
+    } else {
+      errName.innerText = "";
     }
 
     if (!validateEmail(email)) {
       errEmail.innerText = "Please enter a valid email adress!";
       return;
+    } else {
+      errEmail.innerText = "";
     }
 
     if (!validatePhone(phone ? phone : defaultPhone)) {
       errPhone.innerText = "Please enter a valid phone number!";
       return;
+    } else {
+      errPhone.innerText = "";
     }
 
     setName("");
     setEmail("");
     setPhone("");
+
+    errName.innerText = "";
+    errEmail.innerText = "";
+    errPhone.innerText = "";
     setDefaultPhone("+996");
 
     alert("DATA SENT!");
