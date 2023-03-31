@@ -54,11 +54,12 @@ form {
   #errName,
   #errEmail,
   #errPhone {
-    padding-left: 0.5rem;
-    padding-bottom: 0.8rem;
+    width: 300px;
+    padding-left: 0.3rem;
+    padding-bottom: 0.7rem;
     font-size: 0.9rem;
     font-weight: 500;
-    color: rgb(255, 0, 0);
+    color: rgb(255, 62, 62);
   }
 
   button {
