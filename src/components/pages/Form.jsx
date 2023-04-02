@@ -31,7 +31,7 @@ export const Form = () => {
       alert("Please fill in all the fields!");
       return;
     }
-    
+
     if (!validateName(name)) {
       errName.innerText =
         "Name must contain at least 2 and no more than 15 words!";
@@ -65,7 +65,7 @@ export const Form = () => {
     alert("DATA SENT!");
 
     try {
-      await axios.post("https://form-server-jjvy.onrender.com/sendData", {
+      await axios.post("https://form-server-ptzy.onrender.com/sendData", {
         name,
         email,
         phone: phone ? phone : defaultPhone,
