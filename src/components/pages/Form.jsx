@@ -65,7 +65,7 @@ export const Form = () => {
     alert("DATA SENT!");
 
     try {
-      await axios.post("https://light-bat-hose.cyclic.app/sendData", {
+      await axios.post("https://form-server-jjvy.onrender.com/sendData", {
         name,
         email,
         phone: phone ? phone : defaultPhone,

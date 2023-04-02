@@ -6,7 +6,7 @@ export const News = () => {
   const [data, setData] = useState(null);
 
   useEffect(() => {
-    fetch(`https://light-bat-hose.cyclic.app/replay`)
+    fetch(`https://form-server-jjvy.onrender.com/replay`)
       .then((response) => response.json())
       .then((data) => setData(data));
   }, []);
